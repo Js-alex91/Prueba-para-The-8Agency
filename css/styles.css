@@ -1,0 +1,573 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    min-height: 300vh;
+    font-size: 16px;
+}
+
+/*Generales*/
+.alerta-exito{
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    background: #38df38b8;
+    text-align: center;
+    border: 2px solid #37d037a8;
+    border-radius: 5px;
+}
+
+.alerta-error{
+    padding: 3px;
+    margin: 7px 0px;
+    background: #e63535c4;
+    color: white;
+    border: 2px solid #df3939c2;
+    border-radius: 5px;
+}
+
+/*cabecera*/
+
+#header{
+    width: 100%;
+    background: rgb(125, 125, 131);
+}
+
+#title-container{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+#header-contain{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img{
+    width: 100px;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+#list li{
+    float: left;
+    list-style: none;
+}
+
+#list li a{
+    display: block;
+    padding-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: 200ms;
+}
+
+#contact-nav{
+    height: 35px;
+    width: 180px;
+    background: #ffba00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-nav a{
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px #333;
+}
+
+/*barra lateral*/
+
+#lateral{
+    width: 330px;
+    height: 500px;
+    position: absolute;
+    z-index: 10;
+    background: rgb(42,42,42);
+    background: linear-gradient(90deg, rgba(42,42,42,0.9724089464887518) 0%, rgba(136,124,126,1) 100%)
+    transition: all 300ms;
+    left: -100%;
+    display: none;
+}
+
+.icon-menu{
+    font-size: 25px;
+    padding: 5px !important;
+    background: #333 ;
+    transition: all 200ms;
+
+}
+
+.abrir{
+    left: 0px !important;
+}
+
+
+#list-lateral li{
+    list-style: none;
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+}
+
+#list-lateral li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transition: 200ms;
+}
+
+#contact-lateral{
+    height: 35px;
+    width: 150px;
+    background: #ffba00;
+    display: block;
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-lateral a{
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px #333;
+}
+
+.btn_ocultar{
+    display: none;
+}
+
+/*Hover*/
+
+#list li a:hover{
+    color: white;
+}
+
+#contact-nav:hover{
+    background: #f4b302e6;
+}
+
+#list-lateral li a:hover{
+    color: white;
+}
+
+.icon-menu:hover{
+    background: #444 !important;
+}
+
+
+/*fin de hover*/
+
+/*inicio del carrusel*/
+
+/*fin del carrusel*/
+
+
+/*Inicio de formulario y beneficios (select)*/
+
+#contacto{
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/conducir-auto.jpg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#beneficios{
+    width: 40%;
+    
+}
+
+.ui-state-active{
+    border: none !important;
+    background: #ffba00 !important;
+    font-size: 17px !important;
+}
+
+.ui-widget-content{
+    border: none !important;
+    background: #b9b3b3ad !important;
+    font-weight: bold;
+}
+
+
+#formulario{
+    width: 40%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #ccc4c4a3;
+    font-family: helvetica;
+}
+
+#formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entrada{
+    height: 40px;
+    width: 100%;
+    margin-top: 3%;
+    padding: 6px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+input[type=text],
+input[type=email]{
+    height: 100%;
+    width: 90%;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.for-input{
+    padding: 0px 5px;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-top: 3%;
+    font-size: 15px;
+    padding: 5px;
+    resize: none;
+    border: none;
+    border-radius: 3px;
+}
+
+#enviar{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 3%;
+    border: none;
+    border-radius: 10px;
+    background: #ffba00;
+    color: white;
+    text-shadow: 1px 1px 3px #333;
+    font-family: helvetica;
+}
+
+/*hover btn*/
+#enviar:hover{
+  background: #e1b130
+}
+
+/*fin de formulario y beneficios (select-header)*/
+
+
+/*Inicio del catalogo de autos (select-select)*/
+#catalogo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.auto{
+    width: 60%;
+    margin: 0px auto;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info{
+    width: 39%;
+    height: 350px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #444
+}
+
+.anticipo{
+    font-size: 19px;
+    font-weight: bold;
+    height: 15%;
+    text-shadow: 1px 1px 2px #444
+}
+
+.nombre-auto{
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: bolder;
+    height: 26%;
+    text-shadow: 1px 1px 2px #444
+}
+
+.modelo{
+    height: 10%;
+    text-shadow: 1px 1px 2px #444
+}
+
+.precio{
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px #444
+}
+
+.precio-lista{
+    font-size: 17px;
+    text-shadow: 1px 1px 2px #444
+}
+
+.btn-catalogo{
+    margin: 15px;
+    width: 50%;
+    height: 12%;
+    border: none;
+    border-radius: 10px;
+    background: #ffba00;
+}
+
+.btn-catalogo a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 3px #333;
+    font-family: helvetica; 
+}
+
+/*hover btn*/
+.btn-catalogo:hover{
+    background: #ecb211e6;
+}
+
+.img-auto{
+    width: 60%;
+}
+
+.img-auto img{
+    width: 100%;
+}
+
+/*fin del catalogo de autos (select-select)*/
+
+/*inicio del mapa (select-footer)*/
+
+#ubicacion{
+    height: 400px;
+    background-color: #238a8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ubicacion h2{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#mapa{
+    border: none;
+    border-radius: 3px;
+    width: 50%;
+    height:80%;
+}
+
+/*fin del mapa (select-footer)*/
+
+/*Footer*/
+#footer{
+    background-color: black;
+}
+
+#footer-container{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.icon-footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icon-footer span{
+    font-size: 11px;
+}
+
+#footer a{
+    font-family: helvetica;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.copi{
+    color: white;
+    font-size: 12px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+
+
+/*Responsive*/
+
+@media (max-width: 951px){
+    .nombre-auto{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 901px){
+
+    /*formulario y acordeon*/
+    input[type=text],
+    input[type=email]{
+        width: auto;
+    }
+
+    .text-acordeon{
+        font-size: 14px;
+    }
+
+    /*catalogo*/
+    .nombre-auto{
+        height: 20%;
+    }
+
+    .precio{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 765px){
+
+    /*formulario y acordeon*/
+
+    #contacto{
+        height: auto;
+        flex-direction: column;
+    }
+
+    #beneficios{
+        width: 80%;
+        margin: 15px 0px 15px 0px;
+    }
+
+    .text-acordeon{
+        font-size: 17px;
+    }
+
+    #formulario{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+
+    /*catalogo*/
+    .auto{
+        flex-direction: column-reverse;
+    }
+
+    .img-auto{
+        width: 100%;
+    }
+
+    .info{
+        width: 80%;
+    }
+
+    /*lateral*/
+    #nav{
+        display: none;
+    }
+
+    #lateral{
+        display: block;
+    }
+
+    .btn_ocultar{
+        display: block;
+    }
+
+}
+
+@media (max-width: 600px){
+    #list-lateral li a{
+        font-size: 17px;
+    }
+
+    #contact-lateral{
+        width: 120px;
+    }
+}
+
+@media (max-width: 565px){
+    .text-acordeon{
+        font-size: 15px;
+    }
+
+    #logo img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    #lateral{
+        width: 60%;
+    }
+}
+
+@media (max-width: 371px){
+    #logo img{
+        width: 70%;
+    }
+
+    .nombre-auto{
+        font-size: 1.5rem;
+    }
+
+    .precio{
+        font-size: 2rem;
+    }
+
+    .btn-catalogo{
+        width: 80%;
+    }
+
+    .icon-menu{
+        font-size: 20px;
+    }
+}
