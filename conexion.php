@@ -6,9 +6,9 @@ $user = 'root';
 $password = '';
 $database = 'jeep';
 
- $db = mysqli_connect($server, $user, $password, $database);
+// $db = mysqli_connect($server, $user, $password, $database);
 
- mysqli_query($db, "SET NAMES 'utf8'");
+// mysqli_query($db, "SET NAMES 'utf8'");
 
 
 //iniciar la sesion.
